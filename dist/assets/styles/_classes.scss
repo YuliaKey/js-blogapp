@@ -58,3 +58,34 @@ footer {
 
     @include flex;
 }
+
+.title {
+    &-underline {
+        padding-bottom: 2rem;
+        border-bottom: 1px solid $divider-color;
+    }
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: $box-shadow;
+        transition: box-shadow .3s;
+    }
+
+    &-primary {
+        background-color: $primary-color;
+        color: white;
+    }
+
+    &-secondary {
+        border: 1px solid $primary-color;
+        background: white;
+        color: $primary-color;
+    }
+}
