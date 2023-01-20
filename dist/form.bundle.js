@@ -22,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".content {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n}\n.content form {\n  width: 700px;\n  padding: 4rem;\n  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);\n  border-radius: 5px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: flex-start;\n}\n@media (max-width: 480px) {\n  .content form {\n    width: 100%;\n  }\n}\n@media (max-width: 768px) {\n  .content form {\n    width: 100%;\n  }\n}\n.content form h2 {\n  width: 100%;\n}\n.content form .form-group {\n  width: 100%;\n  margin-bottom: 2rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: flex-start;\n}\n.content form .form-group label {\n  font-size: 1.8rem;\n  color: #2c3e50;\n  font-weight: 700;\n  margin-bottom: 1rem;\n}\n.content form .form-group input, .content form .form-group textarea {\n  width: 100%;\n  border: 1px solid #ecf0f1;\n  outline: none;\n  font-size: 1.8rem;\n  border-radius: 3px;\n}\n.content form .form-group input:focus, .content form .form-group textarea:focus {\n  border-color: #2ecc71;\n}\n.content form .form-group input {\n  padding: 5px 10px;\n}\n.content form .form-group textarea {\n  min-height: 20rem;\n  padding: 10px;\n}\n.content form .form-btn-container {\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  align-items: center;\n}\n.content form .form-btn-container .btn {\n  margin-left: 1rem;\n}", "",{"version":3,"sources":["webpack://./src/form/form.scss","webpack://./src/assets/styles/_mixins.scss","webpack://./src/assets/styles/_variables.scss"],"names":[],"mappings":"AAIA;ECqBI,aAAA;EACA,mBAFoB;EAGpB,uBAHmC;EAInC,mBAJmD;ADlBvD;AACI;EACI,YAAA;EACA,aAAA;EACA,mFEFK;EFGL,kBAAA;ECcJ,aAAA;EACA,sBDLkB;ECMlB,uBAHmC;EAInC,uBDPkC;AALtC;ACfI;EDMA;IAOQ,WAAA;EAMV;AACF;ACdI;EDAA;IAWQ,WAAA;EAOV;AACF;AAHQ;EACI,WAAA;AAKZ;AAFQ;EACI,WAAA;EACA,mBAAA;ECJR,aAAA;EACA,sBDKsB;ECJtB,uBAHmC;EAInC,uBDGsC;AAM1C;AAJY;EACI,iBAAA;EACA,cE/BD;EFgCC,gBAAA;EACA,mBAAA;AAMhB;AAHY;EACI,WAAA;EACA,yBAAA;EACA,aAAA;EACA,iBAAA;EACA,kBAAA;AAKhB;AAHgB;EACI,qBE9CJ;AFmDhB;AADY;EACI,iBAAA;AAGhB;AAAY;EACI,iBAAA;EACA,aAAA;AAEhB;AAEQ;EACI,WAAA;ECtCR,aAAA;EACA,mBAFoB;EAGpB,yBDsCgC;ECrChC,mBAJmD;AD2CvD;AAAY;EACI,iBAAA;AAEhB","sourcesContent":["@import '../assets/styles/variables';\n@import '../assets/styles/mixins';\n\n\n.content {\n    @include flex;\n\n    form {\n        width: 700px;\n        padding: 4rem;\n        box-shadow: $box-shadow;\n        border-radius: 5px;\n\n        @include xs {\n            width: 100%;\n        }\n\n        @include sm {\n            width: 100%;\n        }\n\n        @include flex(column, $align: flex-start);\n\n        h2 {\n            width: 100%;\n        }\n\n        .form-group {\n            width: 100%;\n            margin-bottom: 2rem;\n\n            @include flex(column, $align: flex-start);\n\n            label {\n                font-size: 1.8rem;\n                color: $accent-color;\n                font-weight: 700;\n                margin-bottom: 1rem;\n            }\n\n            input, textarea {\n                width: 100%;\n                border: 1px solid $divider-color;\n                outline: none;\n                font-size: 1.8rem;\n                border-radius: 3px;\n\n                &:focus {\n                    border-color: $primary-color;\n                }\n            }\n\n            input { \n                padding: 5px 10px;\n            }\n\n            textarea {\n                min-height: 20rem;\n                padding: 10px;\n            }\n        }\n\n        .form-btn-container {\n            width: 100%;\n\n            @include flex($justify: flex-end);\n\n            .btn {\n                margin-left: 1rem;\n            }\n        }\n    }\n}","@mixin xs {\n    @media (max-width: $screen-xs) {\n        @content;\n    }\n}\n\n@mixin sm {\n    @media (max-width: $screen-sm) {\n        @content;\n    }\n}\n\n@mixin md {\n    @media (min-width: $screen-sm) and (max-width: $screen-md) {\n        @content;\n    }\n}\n\n@mixin xl {\n    @media (min-width: $screen-xl) {\n        @content;\n    }\n}\n\n@mixin flex($direction: row, $justify: center, $align: center) {\n    display: flex;\n    flex-direction: $direction;\n    justify-content: $justify;\n    align-items: $align;\n}","@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap');\n\n$primary-color: #2ecc71;\n$primary-color-dark: #27ae60;\n$accent-color: #2c3e50;\n$text-color: #333;\n$divider-color: #ecf0f1;\n$font-family: 'Mulish', sans-serif;\n$box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);\n\n$screen-xs: 480px;\n$screen-sm: 768px;\n$screen-md: 979px;\n$screen-xl: 1200px;"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".content {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n}\n.content form {\n  width: 700px;\n  padding: 4rem;\n  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);\n  border-radius: 5px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: flex-start;\n}\n@media (max-width: 480px) {\n  .content form {\n    width: 100%;\n  }\n}\n@media (max-width: 768px) {\n  .content form {\n    width: 100%;\n  }\n}\n.content form h2 {\n  width: 100%;\n}\n.content form .form-group {\n  width: 100%;\n  margin-bottom: 2rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: flex-start;\n}\n.content form .form-group label {\n  font-size: 1.8rem;\n  color: #2c3e50;\n  font-weight: 700;\n  margin-bottom: 1rem;\n}\n.content form .form-group input, .content form .form-group textarea {\n  width: 100%;\n  border: 1px solid #ecf0f1;\n  outline: none;\n  font-size: 1.8rem;\n  border-radius: 3px;\n}\n.content form .form-group input:focus, .content form .form-group textarea:focus {\n  border-color: #2ecc71;\n}\n.content form .form-group input {\n  padding: 5px 10px;\n}\n.content form .form-group textarea {\n  min-height: 20rem;\n  padding: 10px;\n}\n.content form .form-btn-container {\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  align-items: center;\n}\n.content form .form-btn-container .btn {\n  margin-left: 1rem;\n}", "",{"version":3,"sources":["webpack://./src/form/form.scss","webpack://./src/assets/styles/_mixins.scss","webpack://./src/assets/styles/_variables.scss"],"names":[],"mappings":"AAIA;ECqBI,aAAA;EACA,mBAFoB;EAGpB,uBAHmC;EAInC,mBAJmD;ADlBvD;AACI;EACI,YAAA;EACA,aAAA;EACA,mFEDK;EFEL,kBAAA;ECcJ,aAAA;EACA,sBDLkB;ECMlB,uBAHmC;EAInC,uBDPkC;AALtC;ACfI;EDMA;IAOQ,WAAA;EAMV;AACF;ACdI;EDAA;IAWQ,WAAA;EAOV;AACF;AAHQ;EACI,WAAA;AAKZ;AAFQ;EACI,WAAA;EACA,mBAAA;ECJR,aAAA;EACA,sBDKsB;ECJtB,uBAHmC;EAInC,uBDGsC;AAM1C;AAJY;EACI,iBAAA;EACA,cE/BD;EFgCC,gBAAA;EACA,mBAAA;AAMhB;AAHY;EACI,WAAA;EACA,yBAAA;EACA,aAAA;EACA,iBAAA;EACA,kBAAA;AAKhB;AAHgB;EACI,qBE9CJ;AFmDhB;AADY;EACI,iBAAA;AAGhB;AAAY;EACI,iBAAA;EACA,aAAA;AAEhB;AAEQ;EACI,WAAA;ECtCR,aAAA;EACA,mBAFoB;EAGpB,yBDsCgC;ECrChC,mBAJmD;AD2CvD;AAAY;EACI,iBAAA;AAEhB","sourcesContent":["@import '../assets/styles/variables';\n@import '../assets/styles/mixins';\n\n\n.content {\n    @include flex;\n\n    form {\n        width: 700px;\n        padding: 4rem;\n        box-shadow: $box-shadow;\n        border-radius: 5px;\n\n        @include xs {\n            width: 100%;\n        }\n\n        @include sm {\n            width: 100%;\n        }\n\n        @include flex(column, $align: flex-start);\n\n        h2 {\n            width: 100%;\n        }\n\n        .form-group {\n            width: 100%;\n            margin-bottom: 2rem;\n\n            @include flex(column, $align: flex-start);\n\n            label {\n                font-size: 1.8rem;\n                color: $accent-color;\n                font-weight: 700;\n                margin-bottom: 1rem;\n            }\n\n            input, textarea {\n                width: 100%;\n                border: 1px solid $divider-color;\n                outline: none;\n                font-size: 1.8rem;\n                border-radius: 3px;\n\n                &:focus {\n                    border-color: $primary-color;\n                }\n            }\n\n            input { \n                padding: 5px 10px;\n            }\n\n            textarea {\n                min-height: 20rem;\n                padding: 10px;\n            }\n        }\n\n        .form-btn-container {\n            width: 100%;\n\n            @include flex($justify: flex-end);\n\n            .btn {\n                margin-left: 1rem;\n            }\n        }\n    }\n}","@mixin xs {\n    @media (max-width: $screen-xs) {\n        @content;\n    }\n}\n\n@mixin sm {\n    @media (max-width: $screen-sm) {\n        @content;\n    }\n}\n\n@mixin md {\n    @media (min-width: $screen-sm) and (max-width: $screen-md) {\n        @content;\n    }\n}\n\n@mixin xl {\n    @media (min-width: $screen-xl) {\n        @content;\n    }\n}\n\n@mixin flex($direction: row, $justify: center, $align: center) {\n    display: flex;\n    flex-direction: $direction;\n    justify-content: $justify;\n    align-items: $align;\n}","@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap');\n\n$primary-color: #2ecc71;\n$primary-color-dark: #27ae60;\n$accent-color: #2c3e50;\n$text-color: #333;\n$text-error: #e74c3c;\n$divider-color: #ecf0f1;\n$font-family: 'Mulish', sans-serif;\n$box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);\n\n$screen-xs: 480px;\n$screen-sm: 768px;\n$screen-md: 979px;\n$screen-xl: 1200px;"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -590,6 +590,58 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _form_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./form.scss */ "./src/form/form.scss");
 
+const form = document.querySelector('form');
+const errorList = document.querySelector("#errors");
+let errors = [];
+const formIsValid = data => {
+  //catch of errors
+  if (!data.author || !data.category || !data.content) {
+    errors.push("Vous devez renseigner tous les champs");
+  }
+  if (errors.length) {
+    // si qq - renvoi TRUE
+    let errorHtml = '';
+    errors.forEach(error => {
+      errorHtml += `<li>${error}<li>`; // += pour rajouter des li, faire plusieur si plusieurs erreurs
+    });
+
+    errorList.innerHTML = errorHtml;
+    return false; // mon formulaire n'est pas valide, il y a des erreurs
+  } else {
+    errorList.innerHTML = '';
+    return true; // mon formulaire est vide, tout est ramplie
+  }
+};
+
+form.addEventListener('submit', async event => {
+  event.preventDefault();
+  const formData = new FormData(form);
+  const entries = formData.entries();
+  const data = Object.fromEntries(entries); // to get one object and not lists, we convert it using Object
+
+  if (formIsValid(data)) {
+    //on utilise async/await function to work with api
+    try {
+      const json = JSON.stringify(data); // get un JSON to send it to api to stock it 
+
+      const response = await fetch("https://restapi.fr/api/dwwm_yuliia", {
+        // i wait a return of my promise so i put await before fetch here
+        method: "POST",
+        // even when we post something we need to wairt a response that api got our information
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        // headers - each time you make a request you have a header, here we presise a content type that we gonna send - json)
+        body: json
+      });
+      const body = await response.json(); // I wait that json will send me the body of response => I affishe le body bellow
+      form.reset(); //as soon as we got response we reset our form so it becomes empty again
+      console.log(body);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+});
 })();
 
 /******/ })()
