@@ -2,19 +2,19 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/form/form.scss":
-/*!*********************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/form/form.scss ***!
-  \*********************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/index.scss":
+/*!*****************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
+  \*****************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
 
@@ -22,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".content {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n}\n.content form {\n  background-color: white;\n  width: 700px;\n  padding: 4rem;\n  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);\n  border-radius: 5px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: flex-start;\n}\n@media (max-width: 480px) {\n  .content form {\n    width: 100%;\n  }\n}\n@media (max-width: 768px) {\n  .content form {\n    width: 100%;\n  }\n}\n.content form h2 {\n  width: 100%;\n}\n.content form .form-group {\n  width: 100%;\n  margin-bottom: 2rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: flex-start;\n}\n.content form .form-group label {\n  font-size: 1.8rem;\n  color: #2c3e50;\n  font-weight: 700;\n  margin-bottom: 1rem;\n}\n.content form .form-group input, .content form .form-group textarea {\n  width: 100%;\n  border: 1px solid #ecf0f1;\n  outline: none;\n  font-size: 1.8rem;\n  border-radius: 3px;\n}\n.content form .form-group input:focus, .content form .form-group textarea:focus {\n  border-color: #2ecc71;\n}\n.content form .form-group input {\n  padding: 5px 10px;\n}\n.content form .form-group textarea {\n  min-height: 20rem;\n  padding: 10px;\n}\n.content form .form-btn-container {\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  align-items: center;\n}\n.content form .form-btn-container .btn {\n  margin-left: 1rem;\n}", "",{"version":3,"sources":["webpack://./src/form/form.scss","webpack://./src/assets/styles/_mixins.scss","webpack://./src/assets/styles/_variables.scss"],"names":[],"mappings":"AAIA;ECqBI,aAAA;EACA,mBAFoB;EAGpB,uBAHmC;EAInC,mBAJmD;ADlBvD;AACI;EACI,uBAAA;EACA,YAAA;EACA,aAAA;EACA,mFEFK;EFGL,kBAAA;ECaJ,aAAA;EACA,sBDJkB;ECKlB,uBAHmC;EAInC,uBDNkC;AALtC;AChBI;EDMA;IAQQ,WAAA;EAMV;AACF;ACfI;EDAA;IAYQ,WAAA;EAOV;AACF;AAHQ;EACI,WAAA;AAKZ;AAFQ;EACI,WAAA;EACA,mBAAA;ECLR,aAAA;EACA,sBDMsB;ECLtB,uBAHmC;EAInC,uBDIsC;AAM1C;AAJY;EACI,iBAAA;EACA,cEhCD;EFiCC,gBAAA;EACA,mBAAA;AAMhB;AAHY;EACI,WAAA;EACA,yBAAA;EACA,aAAA;EACA,iBAAA;EACA,kBAAA;AAKhB;AAHgB;EACI,qBE/CJ;AFoDhB;AADY;EACI,iBAAA;AAGhB;AAAY;EACI,iBAAA;EACA,aAAA;AAEhB;AAEQ;EACI,WAAA;ECvCR,aAAA;EACA,mBAFoB;EAGpB,yBDuCgC;ECtChC,mBAJmD;AD4CvD;AAAY;EACI,iBAAA;AAEhB","sourcesContent":["@import '../assets/styles/variables';\n@import '../assets/styles/mixins';\n\n\n.content {\n    @include flex;\n\n    form {\n        background-color: white;\n        width: 700px;\n        padding: 4rem;\n        box-shadow: $box-shadow;\n        border-radius: 5px;\n\n        @include xs {\n            width: 100%;\n        }\n\n        @include sm {\n            width: 100%;\n        }\n\n        @include flex(column, $align: flex-start);\n\n        h2 {\n            width: 100%;\n        }\n\n        .form-group {\n            width: 100%;\n            margin-bottom: 2rem;\n\n            @include flex(column, $align: flex-start);\n\n            label {\n                font-size: 1.8rem;\n                color: $accent-color;\n                font-weight: 700;\n                margin-bottom: 1rem;\n            }\n\n            input, textarea {\n                width: 100%;\n                border: 1px solid $divider-color;\n                outline: none;\n                font-size: 1.8rem;\n                border-radius: 3px;\n\n                &:focus {\n                    border-color: $primary-color;\n                }\n            }\n\n            input { \n                padding: 5px 10px;\n            }\n\n            textarea {\n                min-height: 20rem;\n                padding: 10px;\n            }\n        }\n\n        .form-btn-container {\n            width: 100%;\n\n            @include flex($justify: flex-end);\n\n            .btn {\n                margin-left: 1rem;\n            }\n        }\n    }\n}","@mixin xs {\n    @media (max-width: $screen-xs) {\n        @content;\n    }\n}\n\n@mixin sm {\n    @media (max-width: $screen-sm) {\n        @content;\n    }\n}\n\n@mixin md {\n    @media (min-width: $screen-sm) and (max-width: $screen-md) {\n        @content;\n    }\n}\n\n@mixin xl {\n    @media (min-width: $screen-xl) {\n        @content;\n    }\n}\n\n@mixin flex($direction: row, $justify: center, $align: center) {\n    display: flex;\n    flex-direction: $direction;\n    justify-content: $justify;\n    align-items: $align;\n}","@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap');\n\n$primary-color: #2ecc71;\n$primary-color-dark: #27ae60;\n$accent-color: #2c3e50;\n$text-color: #333;\n$text-error: #e74c3c;\n$divider-color: #ecf0f1;\n$font-family: 'Mulish', sans-serif;\n$box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);\n\n$screen-xs: 480px;\n$screen-sm: 768px;\n$screen-md: 979px;\n$screen-xl: 1200px;"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".content {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n}\n.content .articles-container {\n  max-width: 800px;\n  width: 100%;\n  margin: 5rem 0 10rem;\n}\n.content .articles-container .article {\n  background: white;\n  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);\n  border-radius: 1rem;\n  padding: 0 5rem;\n  margin-top: 8rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n.content .articles-container .article img {\n  height: 9rem;\n  width: 9rem;\n  border-radius: 50%;\n  margin-top: -4rem;\n  border: 4px solid #2ecc71;\n}\n.content .articles-container .article h2 {\n  margin-top: 2rem;\n  margin-bottom: 0;\n}\n.content .articles-container .article-author {\n  color: #2ecc71;\n  font-weight: 700;\n  margin-bottom: 3rem;\n}\n.content .articles-container .article-content {\n  max-width: 550px;\n  white-space: pre-line;\n}\n.content .articles-container .article-actions {\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  align-items: center;\n  margin: 3rem 0;\n  padding-top: 3rem;\n  border-top: 1px solid #ecf0f1;\n}\n.content .articles-container .article-actions .btn {\n  margin-left: 1rem;\n}", "",{"version":3,"sources":["webpack://./src/index.scss","webpack://./src/assets/styles/_mixins.scss","webpack://./src/assets/styles/_variables.scss"],"names":[],"mappings":"AAGA;ECsBI,aAAA;EACA,mBAFoB;EAGpB,uBAHmC;EAInC,mBAJmD;ADlBvD;AACI;EACI,gBAAA;EACA,WAAA;EACA,oBAAA;AACR;AACQ;EACI,iBAAA;EACA,mFELC;EFMD,mBAAA;EACA,eAAA;EACA,gBAAA;ECQR,aAAA;EACA,sBDPsB;ECQtB,uBAHmC;EAInC,mBAJmD;ADFvD;AADY;EACI,YAAA;EACA,WAAA;EACA,kBAAA;EACA,iBAAA;EACA,yBAAA;AAGhB;AAAY;EACI,gBAAA;EACA,gBAAA;AAEhB;AACY;EACI,cEjCA;EFkCA,gBAAA;EACA,mBAAA;AAChB;AAEY;EACI,gBAAA;EACA,qBAAA;AAAhB;AAGY;EACI,WAAA;ECrBZ,aAAA;EACA,mBAFoB;EAGpB,yBDqBoC;ECpBpC,mBAJmD;EDyBvC,cAAA;EACA,iBAAA;EACA,6BAAA;AAChB;AACgB;EACI,iBAAA;AACpB","sourcesContent":["@import './assets/styles/variables';\n@import './assets/styles/mixins';\n\n.content {\n\n    @include flex;\n\n    .articles-container {\n        max-width: 800px;\n        width: 100%;\n        margin: 5rem 0 10rem;\n\n        .article {\n            background: white;\n            box-shadow: $box-shadow;\n            border-radius: 1rem;\n            padding: 0 5rem;\n            margin-top: 8rem;\n\n            @include flex(column);\n\n            img {\n                height: 9rem;\n                width: 9rem;\n                border-radius: 50%;\n                margin-top: -4rem;\n                border: 4px solid $primary-color;\n            }\n\n            h2 {\n                margin-top: 2rem;\n                margin-bottom: 0;\n            }\n\n            &-author {\n                color: $primary-color;\n                font-weight: 700;\n                margin-bottom: 3rem;\n            }\n\n            &-content {\n                max-width: 550px;\n                white-space: pre-line;\n            }\n\n            &-actions {\n                width: 100%;\n                \n                @include flex($justify: flex-end);\n                margin: 3rem 0;\n                padding-top: 3rem;\n                border-top: 1px solid $divider-color;\n\n                .btn {\n                    margin-left: 1rem;\n                }\n            }\n        }\n    }\n}","@mixin xs {\n    @media (max-width: $screen-xs) {\n        @content;\n    }\n}\n\n@mixin sm {\n    @media (max-width: $screen-sm) {\n        @content;\n    }\n}\n\n@mixin md {\n    @media (min-width: $screen-sm) and (max-width: $screen-md) {\n        @content;\n    }\n}\n\n@mixin xl {\n    @media (min-width: $screen-xl) {\n        @content;\n    }\n}\n\n@mixin flex($direction: row, $justify: center, $align: center) {\n    display: flex;\n    flex-direction: $direction;\n    justify-content: $justify;\n    align-items: $align;\n}","@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap');\n\n$primary-color: #2ecc71;\n$primary-color-dark: #27ae60;\n$accent-color: #2c3e50;\n$text-color: #333;\n$text-error: #e74c3c;\n$divider-color: #ecf0f1;\n$font-family: 'Mulish', sans-serif;\n$box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);\n\n$screen-xs: 480px;\n$screen-sm: 768px;\n$screen-md: 979px;\n$screen-xl: 1200px;"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -148,29 +148,29 @@ module.exports = function (item) {
 
 /***/ }),
 
-/***/ "./src/form/form.scss":
-/*!****************************!*\
-  !*** ./src/form/form.scss ***!
-  \****************************/
+/***/ "./src/index.scss":
+/*!************************!*\
+  !*** ./src/index.scss ***!
+  \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_form_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./form.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/form/form.scss");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./index.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/index.scss");
 
       
       
@@ -192,12 +192,12 @@ options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWi
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_form_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_form_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_form_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_form_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -584,66 +584,46 @@ module.exports = styleTagTransform;
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!**************************!*\
-  !*** ./src/form/form.js ***!
-  \**************************/
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _form_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./form.scss */ "./src/form/form.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.scss */ "./src/index.scss");
 
-const form = document.querySelector('form');
-const errorList = document.querySelector("#errors");
-let errors = [];
-const formIsValid = data => {
-  //catch of errors
-  if (!data.author || !data.category || !data.content || !data.title) {
-    errors.push("Vous devez renseigner tous les champs");
-  }
-  if (errors.length) {
-    // si qq - renvoi TRUE
-    let errorHtml = '';
-    errors.forEach(error => {
-      errorHtml += `<li>${error}<li>`; // += pour rajouter des li, faire plusieur si plusieurs erreurs
-    });
+const articlesContainer = document.querySelector('.articles-container');
+const displayArticles = articles => {
+  const articlesDOM = articles.map(article => {
+    const articleNode = document.createElement('div');
+    articleNode.classList.add("article");
+    articleNode.innerHTML = `<img src=${article.image ? article.image : "assets/images/default_profile.png"} alt="">
+        <h2>${article.title}</h2>
+        <p class="article-author">${article.author}</p>
+        <p class="article-content">${article.content}</p>
+        <div class="article-actions">
+            <button class="btn btn-danger" data.id=${article._id}>Supprimer</button>
+        </div>`;
+    return articleNode;
+  });
+  articlesContainer.innerHTML = '';
+  articlesContainer.append(...articlesDOM);
+};
+const fetchArticles = async () => {
+  try {
+    const response = await fetch("https://restapi.fr/api/dwwm_yuliia2");
+    const articles = await response.json(); // json sends us the body of our response (as a list!) and we stock it in const articles
 
-    errorList.innerHTML = errorHtml;
-    return false; // mon formulaire n'est pas valide, il y a des erreurs
-  } else {
-    errorList.innerHTML = '';
-    return true; // mon formulaire est vide, tout est ramplie
+    if (!articles.length) {
+      displayArticles([articles]);
+    } else {
+      displayArticles(articles);
+    }
+  } catch (error) {
+    console.log(error);
   }
 };
-
-form.addEventListener('submit', async event => {
-  event.preventDefault();
-  const formData = new FormData(form);
-  const entries = formData.entries();
-  const data = Object.fromEntries(entries); // to get one object and not lists, we convert it using Object
-
-  if (formIsValid(data)) {
-    //on utilise async/await function to work with api
-    try {
-      const json = JSON.stringify(data); // get un JSON to send it to api to stock it 
-
-      const response = await fetch("https://restapi.fr/api/dwwm_yuliia2", {
-        // i wait a return of my promise so i put await before fetch here
-        method: "POST",
-        // even when we post something we need to wairt a response that api got our information
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        // headers - each time you make a request you have a header, here we presise a content type that we gonna send - json)
-        body: json
-      });
-      const body = await response.json(); // I wait that json will send me the body of response => I affishe le body bellow
-      form.reset(); //as soon as we got response we reset our form so it becomes empty again
-      console.log(body);
-    } catch (error) {
-      console.log(error);
-    }
-  }
-});
+fetchArticles();
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=form.bundle.js.map
+//# sourceMappingURL=main.bundle.js.map

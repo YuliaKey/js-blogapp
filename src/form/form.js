@@ -5,7 +5,7 @@ const errorList = document.querySelector("#errors");
 let errors = [];
 
 const formIsValid = (data) => { //catch of errors
-    if(!data.author || !data.category || !data.content) {
+    if(!data.author || !data.category || !data.content || !data.title) {
         errors.push("Vous devez renseigner tous les champs")
     }
 
@@ -34,7 +34,7 @@ form.addEventListener('submit', async event => {
         try {
             const json = JSON.stringify(data); // get un JSON to send it to api to stock it 
 
-            const response = await fetch("https://restapi.fr/api/dwwm_yuliia", { // i wait a return of my promise so i put await before fetch here
+            const response = await fetch("https://restapi.fr/api/dwwm_yuliia2", { // i wait a return of my promise so i put await before fetch here
                 method: "POST", // even when we post something we need to wairt a response that api got our information
                 headers: {'Content-Type' : 'application/json'}, // headers - each time you make a request you have a header, here we presise a content type that we gonna send - json)
                 body: json
