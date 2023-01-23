@@ -592,9 +592,13 @@ __webpack_require__.r(__webpack_exports__);
 
 const form = document.querySelector('form');
 const errorList = document.querySelector("#errors");
-let errors = [];
+const cancelBtn = document.querySelector(".btn-secondary");
+cancelBtn.addEventListener('click', () => {
+  location.assign("./index.html");
+});
 const formIsValid = data => {
   //catch of errors
+  let errors = [];
   if (!data.author || !data.category || !data.content || !data.title) {
     errors.push("Vous devez renseigner tous les champs");
   }
@@ -634,8 +638,11 @@ form.addEventListener('submit', async event => {
         // headers - each time you make a request you have a header, here we presise a content type that we gonna send - json)
         body: json
       });
-      const body = await response.json(); // I wait that json will send me the body of response => I affishe le body bellow
-      form.reset(); //as soon as we got response we reset our form so it becomes empty again
+      if (response.status < 299) {
+        //less than 300 means that everything is good, no error (we want here to redirect here to the index html page after posting an article)
+        location.assign('./index.html');
+      }
+      ;
       console.log(body);
     } catch (error) {
       console.log(error);
