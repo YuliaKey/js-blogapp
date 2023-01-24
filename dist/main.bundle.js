@@ -591,6 +591,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.scss */ "./src/index.scss");
 
 const articlesContainer = document.querySelector('.articles-container');
+const categoriesContainer = document.querySelector(".categories");
 const displayArticles = articles => {
   const articlesDOM = articles.map(article => {
     const articleNode = document.createElement('div');
@@ -642,20 +643,44 @@ const displayArticles = articles => {
     });
   });
 };
+const displayMenuCategories = categoriesArray => {
+  const liElements = categoriesArray.map(categoryElement => {
+    const li = document.createElement("li");
+    li.innerHTML = `${categoryElement[0]} ( <strong>${categoryElement[1]}</strong> )`;
+    return li;
+  });
+  categoriesContainer.innerHTML = "";
+  categoriesContainer.append(...liElements);
+};
+const createMenuCategories = articles => {
+  const categories = articles.reduce((acc, article) => {
+    if (acc[article.category]) {
+      acc[article.category]++;
+    } else {
+      acc[article.category] = 1;
+    }
+    return acc;
+  }, {});
+  const categoriesArray = Object.keys(categories).map(category => [category, categories[category]]); // arrays dans array
+
+  displayMenuCategories(categoriesArray);
+};
 const fetchArticles = async () => {
-  //fonction asynchrone qui recupere les donnes depuis l"API
+  // fonction asynchrone qui recupere les donnees depuis l'API
   try {
     const response = await fetch("https://restapi.fr/api/dwwm_yuliia2");
-    const articles = await response.json(); // json sends us the body of our response (as a list!) and we stock it in const articles
+    let articles = await response.json(); // <=== on change 'const' en 'let'
 
-    if (articles.length !== 0) {
-      if (!articles.length) {
-        displayArticles([articles]);
-      } else {
-        displayArticles(articles);
-      }
+    if (!(articles instanceof Array)) {
+      // si 'articles' n'est pas un tableau
+      articles = [articles]; // on le transforme en tableau
+    }
+
+    if (articles.length) {
+      displayArticles(articles);
+      createMenuCategories(articles);
     } else {
-      articlesContainer.innerHTML = "<p>Pas d'articles...</p>";
+      articlesContainer.innerHTML = "<p>Pas d'articles pour le moment</p>";
     }
   } catch (error) {
     console.log(error);
