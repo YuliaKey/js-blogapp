@@ -611,7 +611,7 @@ const initForm = async () => {
 const fillForm = article => {
   const author = document.querySelector('input[name="author"]');
   const image = document.querySelector('input[name="image"]');
-  const category = document.querySelector('input[name="category"]');
+  const category = document.querySelector('select[name="category"]');
   const title = document.querySelector('input[name="title"]');
   const content = document.querySelector('textarea');
   author.value = article.author;
@@ -658,7 +658,7 @@ form.addEventListener('submit', async event => {
       let response;
       if (articleId) {
         //j'enregistre la modification de mon article
-        response = await fetch("https://restapi.fr/api/dwwm_yuliia2", {
+        response = await fetch(`https://restapi.fr/api/dwwm_yuliia2/${articleId}`, {
           // i wait a return of my promise so i put await before fetch here
           method: "PATCH",
           // even when we post something we need to wairt a response that api got our information
@@ -686,7 +686,6 @@ form.addEventListener('submit', async event => {
         location.assign('./index.html');
       }
       ;
-      console.log(body);
     } catch (error) {
       console.log(error);
     }

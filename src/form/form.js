@@ -25,7 +25,7 @@ const initForm = async () => {
 const fillForm = (article) => {
     const author = document.querySelector('input[name="author"]');
     const image = document.querySelector('input[name="image"]');
-    const category = document.querySelector('input[name="category"]');
+    const category = document.querySelector('select[name="category"]');
     const title = document.querySelector('input[name="title"]');
     const content = document.querySelector('textarea');
 
@@ -77,7 +77,7 @@ form.addEventListener('submit', async event => {
             
             if (articleId) {
                 //j'enregistre la modification de mon article
-                response = await fetch("https://restapi.fr/api/dwwm_yuliia2", { // i wait a return of my promise so i put await before fetch here
+                response = await fetch(`https://restapi.fr/api/dwwm_yuliia2/${articleId}`, { // i wait a return of my promise so i put await before fetch here
                 method: "PATCH", // even when we post something we need to wairt a response that api got our information
                 headers: {'Content-Type' : 'application/json'}, // headers - each time you make a request you have a header, here we presise a content type that we gonna send - json)
                 body: json
@@ -95,7 +95,7 @@ form.addEventListener('submit', async event => {
             if (response.status < 299){ //less than 300 means that everything is good, no error (we want here to redirect here to the index html page after posting an article)
                 location.assign('./index.html')
             };
-            console.log(body);
+            
         } catch (error) {
             console.log(error);
         }
