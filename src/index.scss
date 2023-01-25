@@ -13,6 +13,17 @@
         padding: 30px;
         background: white;
 
+        select {
+            width: 100%;
+            margin-bottom: 2rem;
+            border-radius: 0.3rem;
+            border: none;
+            outline: none;
+            background-color: white;
+            padding: 1rem;
+            box-shadow: $box-shadow;
+        }
+
         .categories {
             li {
                 margin-bottom: 15px;
