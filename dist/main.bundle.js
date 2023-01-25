@@ -22,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".content {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: flex-start;\n}\n.content .sidebar {\n  flex: 0 0 250px;\n  margin: 100px 30px;\n  border: 1px solid #333;\n  border-radius: 5px;\n  padding: 30px;\n  background: white;\n}\n.content .sidebar .categories li {\n  margin-bottom: 15px;\n}\n.content .sidebar .categories li:hover {\n  color: #2ecc71;\n  transition: color 0.2s;\n  cursor: pointer;\n}\n.content .sidebar .categories li:hover strong {\n  color: #2ecc71;\n}\n.content .articles-container {\n  max-width: 800px;\n  width: 100%;\n  margin: 5rem 0 10rem;\n  flex: 1;\n}\n.content .articles-container .article {\n  background: white;\n  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);\n  border-radius: 1rem;\n  padding: 0 5rem;\n  margin-top: 8rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n.content .articles-container .article img {\n  height: 9rem;\n  width: 9rem;\n  border-radius: 50%;\n  margin-top: -4rem;\n  border: 4px solid #2ecc71;\n}\n.content .articles-container .article h2 {\n  margin-top: 2rem;\n  margin-bottom: 0;\n}\n.content .articles-container .article-author {\n  color: #2ecc71;\n  font-weight: 700;\n  margin-bottom: 3rem;\n}\n.content .articles-container .article-content {\n  max-width: 550px;\n  white-space: pre-line;\n}\n.content .articles-container .article-actions {\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  align-items: center;\n  margin: 3rem 0;\n  padding-top: 3rem;\n  border-top: 1px solid #ecf0f1;\n}\n.content .articles-container .article-actions .btn {\n  margin-left: 1rem;\n}", "",{"version":3,"sources":["webpack://./src/index.scss","webpack://./src/assets/styles/_mixins.scss","webpack://./src/assets/styles/_variables.scss"],"names":[],"mappings":"AAGA;ECsBI,aAAA;EACA,mBAFoB;EAGpB,uBAHmC;EAInC,uBDvBsB;AAC1B;AACI;EACI,eAAA;EACA,kBAAA;EACA,sBAAA;EACA,kBAAA;EACA,aAAA;EACA,iBAAA;AACR;AAEY;EACI,mBAAA;AAAhB;AACgB;EACI,cEjBJ;EFkBI,sBAAA;EACA,eAAA;AACpB;AACoB;EACI,cEtBR;AFuBhB;AAQI;EACI,gBAAA;EACA,WAAA;EACA,oBAAA;EACA,OAAA;AANR;AAQQ;EACI,iBAAA;EACA,mFEhCC;EFiCD,mBAAA;EACA,eAAA;EACA,gBAAA;ECnBR,aAAA;EACA,sBDoBsB;ECnBtB,uBAHmC;EAInC,mBAJmD;ADkBvD;AAMY;EACI,YAAA;EACA,WAAA;EACA,kBAAA;EACA,iBAAA;EACA,yBAAA;AAJhB;AAOY;EACI,gBAAA;EACA,gBAAA;AALhB;AAQY;EACI,cE5DA;EF6DA,gBAAA;EACA,mBAAA;AANhB;AASY;EACI,gBAAA;EACA,qBAAA;AAPhB;AAUY;EACI,WAAA;EChDZ,aAAA;EACA,mBAFoB;EAGpB,yBDgDoC;EC/CpC,mBAJmD;EDoDvC,cAAA;EACA,iBAAA;EACA,6BAAA;AANhB;AAQgB;EACI,iBAAA;AANpB","sourcesContent":["@import './assets/styles/variables';\n@import './assets/styles/mixins';\n\n.content {\n\n    @include flex($align: flex-start);\n\n    .sidebar {\n        flex: 0 0 250px;\n        margin: 100px 30px;\n        border: 1px solid $text-color;\n        border-radius: 5px;\n        padding: 30px;\n        background: white;\n\n        .categories {\n            li {\n                margin-bottom: 15px;\n                &:hover {\n                    color: $primary-color;\n                    transition: color .2s;\n                    cursor: pointer;\n\n                    strong {\n                        color: $primary-color;\n                    }\n                }\n            }\n        }\n\n    }\n\n\n    .articles-container {\n        max-width: 800px;\n        width: 100%;\n        margin: 5rem 0 10rem;\n        flex: 1;\n\n        .article {\n            background: white;\n            box-shadow: $box-shadow;\n            border-radius: 1rem;\n            padding: 0 5rem;\n            margin-top: 8rem;\n\n            @include flex(column);\n\n            img {\n                height: 9rem;\n                width: 9rem;\n                border-radius: 50%;\n                margin-top: -4rem;\n                border: 4px solid $primary-color;\n            }\n\n            h2 {\n                margin-top: 2rem;\n                margin-bottom: 0;\n            }\n\n            &-author {\n                color: $primary-color;\n                font-weight: 700;\n                margin-bottom: 3rem;\n            }\n\n            &-content {\n                max-width: 550px;\n                white-space: pre-line;\n            }\n\n            &-actions {\n                width: 100%;\n                \n                @include flex($justify: flex-end);\n                margin: 3rem 0;\n                padding-top: 3rem;\n                border-top: 1px solid $divider-color;\n\n                .btn {\n                    margin-left: 1rem;\n                }\n            }\n        }\n    }\n}","@mixin xs {\n    @media (max-width: $screen-xs) {\n        @content;\n    }\n}\n\n@mixin sm {\n    @media (max-width: $screen-sm) {\n        @content;\n    }\n}\n\n@mixin md {\n    @media (min-width: $screen-sm) and (max-width: $screen-md) {\n        @content;\n    }\n}\n\n@mixin xl {\n    @media (min-width: $screen-xl) {\n        @content;\n    }\n}\n\n@mixin flex($direction: row, $justify: center, $align: center) {\n    display: flex;\n    flex-direction: $direction;\n    justify-content: $justify;\n    align-items: $align;\n}","@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap');\n\n$primary-color: #2ecc71;\n$primary-color-dark: #27ae60;\n$accent-color: #2c3e50;\n$text-color: #333;\n$text-error: #e74c3c;\n$divider-color: #ecf0f1;\n$font-family: 'Mulish', sans-serif;\n$box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);\n\n$screen-xs: 480px;\n$screen-sm: 768px;\n$screen-md: 979px;\n$screen-xl: 1200px;"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".content {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: flex-start;\n}\n.content .sidebar {\n  flex: 0 0 250px;\n  margin: 100px 30px;\n  border: 1px solid #333;\n  border-radius: 5px;\n  padding: 30px;\n  background: white;\n}\n.content .sidebar .categories li {\n  margin-bottom: 15px;\n}\n.content .sidebar .categories li:hover {\n  color: #2ecc71;\n  transition: color 0.2s;\n  cursor: pointer;\n}\n.content .sidebar .categories li:hover strong {\n  color: #2ecc71;\n}\n.content .sidebar .categories .active {\n  color: #2ecc71;\n  font-weight: bold;\n}\n.content .articles-container {\n  max-width: 800px;\n  width: 100%;\n  margin: 5rem 0 10rem;\n  flex: 1;\n}\n.content .articles-container .article {\n  background: white;\n  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);\n  border-radius: 1rem;\n  padding: 0 5rem;\n  margin-top: 8rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n.content .articles-container .article img {\n  height: 9rem;\n  width: 9rem;\n  border-radius: 50%;\n  margin-top: -4rem;\n  border: 4px solid #2ecc71;\n}\n.content .articles-container .article h2 {\n  margin-top: 2rem;\n  margin-bottom: 0;\n}\n.content .articles-container .article-author {\n  color: #2ecc71;\n  font-weight: 700;\n  margin-bottom: 3rem;\n}\n.content .articles-container .article-content {\n  max-width: 550px;\n  white-space: pre-line;\n}\n.content .articles-container .article-actions {\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  align-items: center;\n  margin: 3rem 0;\n  padding-top: 3rem;\n  border-top: 1px solid #ecf0f1;\n}\n.content .articles-container .article-actions .btn {\n  margin-left: 1rem;\n}", "",{"version":3,"sources":["webpack://./src/index.scss","webpack://./src/assets/styles/_mixins.scss","webpack://./src/assets/styles/_variables.scss"],"names":[],"mappings":"AAGA;ECsBI,aAAA;EACA,mBAFoB;EAGpB,uBAHmC;EAInC,uBDvBsB;AAC1B;AACI;EACI,eAAA;EACA,kBAAA;EACA,sBAAA;EACA,kBAAA;EACA,aAAA;EACA,iBAAA;AACR;AAEY;EACI,mBAAA;AAAhB;AACgB;EACI,cEjBJ;EFkBI,sBAAA;EACA,eAAA;AACpB;AACoB;EACI,cEtBR;AFuBhB;AAIY;EACI,cE5BA;EF6BA,iBAAA;AAFhB;AASI;EACI,gBAAA;EACA,WAAA;EACA,oBAAA;EACA,OAAA;AAPR;AASQ;EACI,iBAAA;EACA,mFErCC;EFsCD,mBAAA;EACA,eAAA;EACA,gBAAA;ECxBR,aAAA;EACA,sBDyBsB;ECxBtB,uBAHmC;EAInC,mBAJmD;ADsBvD;AAOY;EACI,YAAA;EACA,WAAA;EACA,kBAAA;EACA,iBAAA;EACA,yBAAA;AALhB;AAQY;EACI,gBAAA;EACA,gBAAA;AANhB;AASY;EACI,cEjEA;EFkEA,gBAAA;EACA,mBAAA;AAPhB;AAUY;EACI,gBAAA;EACA,qBAAA;AARhB;AAWY;EACI,WAAA;ECrDZ,aAAA;EACA,mBAFoB;EAGpB,yBDqDoC;ECpDpC,mBAJmD;EDyDvC,cAAA;EACA,iBAAA;EACA,6BAAA;AAPhB;AASgB;EACI,iBAAA;AAPpB","sourcesContent":["@import './assets/styles/variables';\n@import './assets/styles/mixins';\n\n.content {\n\n    @include flex($align: flex-start);\n\n    .sidebar {\n        flex: 0 0 250px;\n        margin: 100px 30px;\n        border: 1px solid $text-color;\n        border-radius: 5px;\n        padding: 30px;\n        background: white;\n\n        .categories {\n            li {\n                margin-bottom: 15px;\n                &:hover {\n                    color: $primary-color;\n                    transition: color .2s;\n                    cursor: pointer;\n\n                    strong {\n                        color: $primary-color;\n                    }\n                }\n            }\n\n            .active {\n                color: $primary-color;\n                font-weight: bold;\n            }\n        }\n\n    }\n\n\n    .articles-container {\n        max-width: 800px;\n        width: 100%;\n        margin: 5rem 0 10rem;\n        flex: 1;\n\n        .article {\n            background: white;\n            box-shadow: $box-shadow;\n            border-radius: 1rem;\n            padding: 0 5rem;\n            margin-top: 8rem;\n\n            @include flex(column);\n\n            img {\n                height: 9rem;\n                width: 9rem;\n                border-radius: 50%;\n                margin-top: -4rem;\n                border: 4px solid $primary-color;\n            }\n\n            h2 {\n                margin-top: 2rem;\n                margin-bottom: 0;\n            }\n\n            &-author {\n                color: $primary-color;\n                font-weight: 700;\n                margin-bottom: 3rem;\n            }\n\n            &-content {\n                max-width: 550px;\n                white-space: pre-line;\n            }\n\n            &-actions {\n                width: 100%;\n                \n                @include flex($justify: flex-end);\n                margin: 3rem 0;\n                padding-top: 3rem;\n                border-top: 1px solid $divider-color;\n\n                .btn {\n                    margin-left: 1rem;\n                }\n            }\n        }\n    }\n}","@mixin xs {\n    @media (max-width: $screen-xs) {\n        @content;\n    }\n}\n\n@mixin sm {\n    @media (max-width: $screen-sm) {\n        @content;\n    }\n}\n\n@mixin md {\n    @media (min-width: $screen-sm) and (max-width: $screen-md) {\n        @content;\n    }\n}\n\n@mixin xl {\n    @media (min-width: $screen-xl) {\n        @content;\n    }\n}\n\n@mixin flex($direction: row, $justify: center, $align: center) {\n    display: flex;\n    flex-direction: $direction;\n    justify-content: $justify;\n    align-items: $align;\n}","@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap');\n\n$primary-color: #2ecc71;\n$primary-color-dark: #27ae60;\n$accent-color: #2c3e50;\n$text-color: #333;\n$text-error: #e74c3c;\n$divider-color: #ecf0f1;\n$font-family: 'Mulish', sans-serif;\n$box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);\n\n$screen-xs: 480px;\n$screen-sm: 768px;\n$screen-md: 979px;\n$screen-xl: 1200px;"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -592,8 +592,16 @@ __webpack_require__.r(__webpack_exports__);
 
 const articlesContainer = document.querySelector('.articles-container');
 const categoriesContainer = document.querySelector(".categories");
-const displayArticles = articles => {
-  const articlesDOM = articles.map(article => {
+let filter;
+let articles;
+const displayArticles = () => {
+  const articlesDOM = articles.filter(article => {
+    if (filter) {
+      return article.category === filter;
+    } else {
+      return true;
+    }
+  }).map(article => {
     const articleNode = document.createElement('div');
     articleNode.classList.add("article");
     articleNode.innerHTML = `<img src=${article.image ? article.image : "assets/images/default_profile.png"} alt="">
@@ -647,12 +655,25 @@ const displayMenuCategories = categoriesArray => {
   const liElements = categoriesArray.map(categoryElement => {
     const li = document.createElement("li");
     li.innerHTML = `${categoryElement[0]} ( <strong>${categoryElement[1]}</strong> )`;
+    li.addEventListener('click', event => {
+      if (filter === categoryElement[0]) {
+        // la category est deja selectionne, je deselectionne et je reviens sur la liste de touts les articles
+        liElements.forEach(li => li.classList.remove('active'));
+        filter = null;
+      } else {
+        // j'ai la liste de tous les articles, je selectionne une category
+        liElements.forEach(li => li.classList.remove('active'));
+        li.classList.add('active');
+        filter = categoryElement[0];
+      }
+      displayArticles();
+    });
     return li;
   });
   categoriesContainer.innerHTML = "";
   categoriesContainer.append(...liElements);
 };
-const createMenuCategories = articles => {
+const createMenuCategories = () => {
   const categories = articles.reduce((acc, article) => {
     if (acc[article.category]) {
       acc[article.category]++;
@@ -661,15 +682,16 @@ const createMenuCategories = articles => {
     }
     return acc;
   }, {});
-  const categoriesArray = Object.keys(categories).map(category => [category, categories[category]]); // arrays dans array
-
+  const categoriesArray = Object.keys(categories) // arrays dans array
+  .map(category => [category, categories[category]]) //[[science, 1], [histoire, 1], ...]
+  .sort((a, b) => a[0].localeCompare(b[0]));
   displayMenuCategories(categoriesArray);
 };
 const fetchArticles = async () => {
   // fonction asynchrone qui recupere les donnees depuis l'API
   try {
     const response = await fetch("https://restapi.fr/api/dwwm_yuliia2");
-    let articles = await response.json(); // <=== on change 'const' en 'let'
+    articles = await response.json(); // <=== on change 'const' en 'let'
 
     if (!(articles instanceof Array)) {
       // si 'articles' n'est pas un tableau
@@ -677,8 +699,8 @@ const fetchArticles = async () => {
     }
 
     if (articles.length) {
-      displayArticles(articles);
-      createMenuCategories(articles);
+      displayArticles();
+      createMenuCategories();
     } else {
       articlesContainer.innerHTML = "<p>Pas d'articles pour le moment</p>";
     }
