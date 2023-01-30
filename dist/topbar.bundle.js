@@ -2,79 +2,19 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/assets/javascripts/modal.js":
-/*!*****************************************!*\
-  !*** ./src/assets/javascripts/modal.js ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "openModal": () => (/* binding */ openModal)
-/* harmony export */ });
-const body = document.querySelector('body');
-let calc;
-let modal;
-let cancelBtn;
-let confirmBtn;
-const createCalc = () => {
-  calc = document.createElement('div');
-  calc.classList.add('calc');
-};
-const createModal = question => {
-  modal = document.createElement('div');
-  modal.classList.add('modal');
-  modal.innerHTML = `<p>${question}</p>`;
-  cancelBtn = document.createElement('button');
-  cancelBtn.classList.add('btn', 'btn-secondary');
-  cancelBtn.innerText = "Annuler";
-  cancelBtn.addEventListener('click', () => {
-    calc.remove();
-  });
-  confirmBtn = document.createElement("button");
-  confirmBtn.classList.add('btn', 'btn-primary');
-  confirmBtn.innerText = "Confirmer";
-  modal.addEventListener('click', event => {
-    event.stopPropagation();
-  });
-  modal.append(cancelBtn, confirmBtn);
-};
-function openModal(question) {
-  createCalc();
-  createModal(question);
-  calc.append(modal);
-  body.append(calc);
-  return new Promise((resolve, reject) => {
-    calc.addEventListener('click', () => {
-      resolve(false);
-      calc.remove();
-    });
-    cancelBtn.addEventListener('click', () => {
-      resolve(false);
-      calc.remove();
-    });
-    confirmBtn.addEventListener('click', () => {
-      resolve(true);
-      calc.remove();
-    });
-  });
-}
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/form/form.scss":
-/*!*********************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/form/form.scss ***!
-  \*********************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/styles/style.scss":
+/*!*******************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/styles/style.scss ***!
+  \*******************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
 
@@ -82,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".content {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n}\n.content form {\n  background-color: white;\n  width: 700px;\n  padding: 4rem;\n  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);\n  border-radius: 5px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: flex-start;\n}\n@media (max-width: 480px) {\n  .content form {\n    width: 100%;\n  }\n}\n@media (max-width: 768px) {\n  .content form {\n    width: 100%;\n  }\n}\n.content form h2 {\n  width: 100%;\n}\n.content form .form-group {\n  width: 100%;\n  margin-bottom: 2rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: flex-start;\n}\n.content form .form-group label {\n  font-size: 1.8rem;\n  color: #2c3e50;\n  font-weight: 700;\n  margin-bottom: 1rem;\n}\n.content form .form-group input,\n.content form .form-group textarea,\n.content form .form-group select {\n  width: 100%;\n  border: 1px solid #ecf0f1;\n  outline: none;\n  font-size: 1.8rem;\n  border-radius: 3px;\n}\n.content form .form-group input:focus,\n.content form .form-group textarea:focus,\n.content form .form-group select:focus {\n  border-color: #2ecc71;\n}\n.content form .form-group input,\n.content form .form-group select {\n  padding: 5px 10px;\n}\n.content form .form-group textarea {\n  min-height: 20rem;\n  padding: 10px;\n}\n.content form .form-btn-container {\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  align-items: center;\n}\n.content form .form-btn-container .btn {\n  margin-left: 1rem;\n}", "",{"version":3,"sources":["webpack://./src/form/form.scss","webpack://./src/assets/styles/_mixins.scss","webpack://./src/assets/styles/_variables.scss"],"names":[],"mappings":"AAIA;ECqBI,aAAA;EACA,mBAFoB;EAGpB,uBAHmC;EAInC,mBAJmD;ADlBvD;AACI;EACI,uBAAA;EACA,YAAA;EACA,aAAA;EACA,mFEFK;EFGL,kBAAA;ECaJ,aAAA;EACA,sBDJkB;ECKlB,uBAHmC;EAInC,uBDNkC;AALtC;AChBI;EDMA;IAQQ,WAAA;EAMV;AACF;ACfI;EDAA;IAYQ,WAAA;EAOV;AACF;AAHQ;EACI,WAAA;AAKZ;AAFQ;EACI,WAAA;EACA,mBAAA;ECLR,aAAA;EACA,sBDMsB;ECLtB,uBAHmC;EAInC,uBDIsC;AAM1C;AAJY;EACI,iBAAA;EACA,cEhCD;EFiCC,gBAAA;EACA,mBAAA;AAMhB;AAHY;;;EAGI,WAAA;EACA,yBAAA;EACA,aAAA;EACA,iBAAA;EACA,kBAAA;AAKhB;AAHgB;;;EACI,qBEjDJ;AFwDhB;AAHY;;EAEI,iBAAA;AAKhB;AAFY;EACI,iBAAA;EACA,aAAA;AAIhB;AAAQ;EACI,WAAA;EC1CR,aAAA;EACA,mBAFoB;EAGpB,yBD0CgC;ECzChC,mBAJmD;ADiDvD;AAFY;EACI,iBAAA;AAIhB","sourcesContent":["@import '../assets/styles/variables';\n@import '../assets/styles/mixins';\n\n\n.content {\n    @include flex;\n\n    form {\n        background-color: white;\n        width: 700px;\n        padding: 4rem;\n        box-shadow: $box-shadow;\n        border-radius: 5px;\n\n        @include xs {\n            width: 100%;\n        }\n\n        @include sm {\n            width: 100%;\n        }\n\n        @include flex(column, $align: flex-start);\n\n        h2 {\n            width: 100%;\n        }\n\n        .form-group {\n            width: 100%;\n            margin-bottom: 2rem;\n\n            @include flex(column, $align: flex-start);\n\n            label {\n                font-size: 1.8rem;\n                color: $accent-color;\n                font-weight: 700;\n                margin-bottom: 1rem;\n            }\n\n            input, \n            textarea, \n            select {\n                width: 100%;\n                border: 1px solid $divider-color;\n                outline: none;\n                font-size: 1.8rem;\n                border-radius: 3px;\n\n                &:focus {\n                    border-color: $primary-color;\n                }\n            }\n\n            input,\n            select { \n                padding: 5px 10px;\n            }\n\n            textarea {\n                min-height: 20rem;\n                padding: 10px;\n            }\n        }\n\n        .form-btn-container {\n            width: 100%;\n\n            @include flex($justify: flex-end);\n\n            .btn {\n                margin-left: 1rem;\n            }\n        }\n    }\n}","@mixin xs {\n    @media (max-width: $screen-xs) {\n        @content;\n    }\n}\n\n@mixin sm {\n    @media (max-width: $screen-sm) {\n        @content;\n    }\n}\n\n@mixin md {\n    @media (min-width: $screen-sm) and (max-width: $screen-md) {\n        @content;\n    }\n}\n\n@mixin xl {\n    @media (min-width: $screen-xl) {\n        @content;\n    }\n}\n\n@mixin flex($direction: row, $justify: center, $align: center) {\n    display: flex;\n    flex-direction: $direction;\n    justify-content: $justify;\n    align-items: $align;\n}","@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap');\n\n$primary-color: #2ecc71;\n$primary-color-dark: #27ae60;\n$accent-color: #2c3e50;\n$text-color: #333;\n$text-error: #e74c3c;\n$divider-color: #ecf0f1;\n$font-family: 'Mulish', sans-serif;\n$box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);\n\n$screen-xs: 480px;\n$screen-sm: 768px;\n$screen-md: 979px;\n$screen-xl: 1200px;"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: 0;\n}\n\n:root {\n  font-size: 62.5%;\n}\n\nbody {\n  font-size: 1.6rem;\n  color: #333;\n  font-family: \"Mulish\", sans-serif;\n}\n\nh1, h2, h3, h4 {\n  margin-bottom: 2rem;\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: #333;\n  text-decoration: none;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid: \"header\" auto \"content\" 1fr \"footer\" auto/auto;\n}\n\nheader {\n  grid-area: header;\n  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);\n  padding: 20px;\n  background-color: #27ae60;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n}\nheader a {\n  color: white;\n}\nheader .header-brand {\n  font-size: 4rem;\n  font-weight: 700;\n}\nheader ul {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n}\nheader ul li .header-nav {\n  font-size: 1.8rem;\n  padding: 10px 15px;\n}\nheader ul li .active {\n  font-weight: 700;\n  border: 1px solid #2c3e50;\n  border-radius: 25px;\n}\n\n.content {\n  grid-area: content;\n  padding: 20px;\n  background-color: #ecf0f1;\n}\n\nfooter {\n  grid-area: footer;\n  background: #333;\n  padding: 20px;\n  color: white;\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n}\n\n.title-underline {\n  padding-bottom: 2rem;\n  border-bottom: 1px solid #ecf0f1;\n}\n\n.btn {\n  border: none;\n  border-radius: 5px;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n}\n.btn:hover {\n  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);\n  transition: box-shadow 0.3s;\n}\n.btn-primary {\n  background-color: #2ecc71;\n  color: white;\n}\n.btn-secondary {\n  border: 1px solid #2ecc71;\n  background: white;\n  color: #2ecc71;\n}\n.btn-danger {\n  background-color: #e74c3c;\n  color: white;\n}\n\n.text-error {\n  color: #e74c3c;\n}\n\n.calc {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100vh;\n  background: rgba(0, 0, 0, 0.7);\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n}\n.calc .modal {\n  width: 30%;\n  background: white;\n  border: 1px solid #333;\n  border-radius: 5px;\n  padding: 40px;\n  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);\n  text-align: center;\n}\n.calc .modal p {\n  font-size: 2rem;\n}\n.calc .modal .btn {\n  margin-top: 30px;\n  margin-right: 10px;\n}", "",{"version":3,"sources":["webpack://./src/assets/styles/_reset.scss","webpack://./src/assets/styles/style.scss","webpack://./src/assets/styles/_base.scss","webpack://./src/assets/styles/_variables.scss","webpack://./src/assets/styles/_classes.scss","webpack://./src/assets/styles/_mixins.scss"],"names":[],"mappings":"AAAA;EACI,SAAA;EACA,UAAA;EACA,aAAA;ACEJ;;ACLA;EACI,gBAAA;ADQJ;;ACLA;EACI,iBAAA;EACA,WCDS;EDET,iCCCU;AFOd;;ACLA;EACI,mBAAA;ADQJ;;ACFI;EACI,iBAJQ;ADShB;;ACNI;EACI,eAJQ;ADahB;;ACVI;EACI,iBAJQ;ADiBhB;;ACdI;EACI,eAJQ;ADqBhB;;ACbA;EACI,gBAAA;ADgBJ;;ACbA;EACI,eAAA;ADgBJ;;ACbA;EACI,WC1BS;ED2BT,qBAAA;ADgBJ;;AG/CA;EACI,iBAAA;EACA,aAAA;EACA,oDACI;AHiDR;;AG3CA;EACI,iBAAA;EACA,mFDJS;ECKT,aAAA;EACA,yBDZiB;EEsBjB,aAAA;EACA,mBAFoB;EAGpB,8BDVwB;ECWxB,mBAJmD;AJyCvD;AG9CI;EACI,YAAA;AHgDR;AG7CI;EACI,eAAA;EACA,gBAAA;AH+CR;AG5CI;ECHA,aAAA;EACA,mBAFoB;EAGpB,uBAHmC;EAInC,mBAJmD;AJsDvD;AG7CY;EACI,iBAAA;EACA,kBAAA;AH+ChB;AG5CY;EACI,gBAAA;EACA,yBAAA;EACA,mBAAA;AH8ChB;;AGxCA;EACI,kBAAA;EACA,aAAA;EACA,yBD3CY;AFsFhB;;AGvCA;EACI,iBAAA;EACA,gBDnDS;ECoDT,aAAA;EACA,YAAA;ECjCA,aAAA;EACA,mBAFoB;EAGpB,uBAHmC;EAInC,mBAJmD;AJgFvD;;AGxCI;EACI,oBAAA;EACA,gCAAA;AH2CR;;AGvCA;EACI,YAAA;EACA,kBAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;AH0CJ;AGxCI;EACI,mFDrEK;ECsEL,2BAAA;AH0CR;AGvCI;EACI,yBDjFQ;ECkFR,YAAA;AHyCR;AGtCI;EACI,yBAAA;EACA,iBAAA;EACA,cDxFQ;AFgIhB;AGrCI;EACI,yBDxFK;ECyFL,YAAA;AHuCR;;AGnCA;EACI,cD9FS;AFoIb;;AGnCA;EACI,kBAAA;EACA,MAAA;EACA,OAAA;EACA,WAAA;EACA,aAAA;EACA,8BAAA;ECpFA,aAAA;EACA,mBAFoB;EAGpB,uBAHmC;EAInC,mBAJmD;AJ+HvD;AGtCI;EACI,UAAA;EACA,iBAAA;EACA,sBAAA;EACA,kBAAA;EACA,aAAA;EACA,mFD9GK;EC+GL,kBAAA;AHwCR;AGtCQ;EACI,eAAA;AHwCZ;AGrCQ;EACI,gBAAA;EACA,kBAAA;AHuCZ","sourcesContent":["* {\n    margin: 0;\n    padding: 0;\n    box-sizing: 0;\n}","@import url(\"https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap\");\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: 0;\n}\n\n:root {\n  font-size: 62.5%;\n}\n\nbody {\n  font-size: 1.6rem;\n  color: #333;\n  font-family: \"Mulish\", sans-serif;\n}\n\nh1, h2, h3, h4 {\n  margin-bottom: 2rem;\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: #333;\n  text-decoration: none;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid: \"header\" auto \"content\" 1fr \"footer\" auto/auto;\n}\n\nheader {\n  grid-area: header;\n  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);\n  padding: 20px;\n  background-color: #27ae60;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n}\nheader a {\n  color: white;\n}\nheader .header-brand {\n  font-size: 4rem;\n  font-weight: 700;\n}\nheader ul {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n}\nheader ul li .header-nav {\n  font-size: 1.8rem;\n  padding: 10px 15px;\n}\nheader ul li .active {\n  font-weight: 700;\n  border: 1px solid #2c3e50;\n  border-radius: 25px;\n}\n\n.content {\n  grid-area: content;\n  padding: 20px;\n  background-color: #ecf0f1;\n}\n\nfooter {\n  grid-area: footer;\n  background: #333;\n  padding: 20px;\n  color: white;\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n}\n\n.title-underline {\n  padding-bottom: 2rem;\n  border-bottom: 1px solid #ecf0f1;\n}\n\n.btn {\n  border: none;\n  border-radius: 5px;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n}\n.btn:hover {\n  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);\n  transition: box-shadow 0.3s;\n}\n.btn-primary {\n  background-color: #2ecc71;\n  color: white;\n}\n.btn-secondary {\n  border: 1px solid #2ecc71;\n  background: white;\n  color: #2ecc71;\n}\n.btn-danger {\n  background-color: #e74c3c;\n  color: white;\n}\n\n.text-error {\n  color: #e74c3c;\n}\n\n.calc {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100vh;\n  background: rgba(0, 0, 0, 0.7);\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n}\n.calc .modal {\n  width: 30%;\n  background: white;\n  border: 1px solid #333;\n  border-radius: 5px;\n  padding: 40px;\n  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);\n  text-align: center;\n}\n.calc .modal p {\n  font-size: 2rem;\n}\n.calc .modal .btn {\n  margin-top: 30px;\n  margin-right: 10px;\n}",":root {\n    font-size: 62.5%;\n}\n\nbody {\n    font-size: 1.6rem;\n    color: $text-color;\n    font-family: $font-family;\n}\n\nh1, h2, h3, h4 {\n    margin-bottom: 2rem;\n}\n\n$sizes-titles : (1, 3.5rem), (2, 3rem), (3, 2.5rem), (4, 2rem);\n\n@each $title, $font-size in $sizes-titles {\n    h#{$title} {\n        font-size: $font-size;\n    }\n}\n\nul {\n    list-style: none;\n}\n\nimg {\n    max-width: 100%;\n}\n\na {\n    color: $text-color;\n    text-decoration: none;\n}","@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap');\n\n$primary-color: #2ecc71;\n$primary-color-dark: #27ae60;\n$accent-color: #2c3e50;\n$text-color: #333;\n$text-error: #e74c3c;\n$divider-color: #ecf0f1;\n$font-family: 'Mulish', sans-serif;\n$box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);\n\n$screen-xs: 480px;\n$screen-sm: 768px;\n$screen-md: 979px;\n$screen-xl: 1200px;","\n.container {\n    min-height: 100vh;\n    display: grid;\n    grid: \n        \"header\" auto\n        \"content\" 1fr\n        \"footer\" auto /\n        auto;\n}\n\nheader {\n    grid-area: header;\n    box-shadow: $box-shadow;\n    padding: 20px;\n    background-color: $primary-color-dark;\n\n    @include flex($justify: space-between);\n\n    a {\n        color: white;\n    }\n\n    .header-brand {\n        font-size: 4rem;\n        font-weight: 700;\n    }\n\n    ul {\n\n        @include flex;\n\n        li {\n            .header-nav {\n                font-size: 1.8rem;\n                padding: 10px 15px;\n            }\n\n            .active {\n                font-weight: 700;\n                border: 1px solid $accent-color;\n                border-radius: 25px;\n            }\n        }\n    }\n}\n\n.content {\n    grid-area: content;\n    padding: 20px;\n    background-color: $divider-color;\n\n}\n\nfooter {\n    grid-area: footer;\n    background: $text-color;\n    padding: 20px;\n    color: white;\n\n    @include flex;\n}\n\n.title {\n    &-underline {\n        padding-bottom: 2rem;\n        border-bottom: 1px solid $divider-color;\n    }\n}\n\n.btn {\n    border: none;\n    border-radius: 5px;\n    padding: 1rem 2rem;\n    font-weight: 700;\n    cursor: pointer;\n\n    &:hover {\n        box-shadow: $box-shadow;\n        transition: box-shadow .3s;\n    }\n\n    &-primary {\n        background-color: $primary-color;\n        color: white;\n    }\n\n    &-secondary {\n        border: 1px solid $primary-color;\n        background: white;\n        color: $primary-color;\n    }\n\n    &-danger {\n        background-color: $text-error;\n        color: white;\n    }\n}\n\n.text-error {\n    color: $text-error;\n}\n\n.calc {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100vh;\n    background: rgba($color: #000000, $alpha: 0.7);\n\n    @include flex;\n\n    .modal {\n        width: 30%;\n        background: white;\n        border: 1px solid #333;\n        border-radius: 5px;\n        padding: 40px;\n        box-shadow: $box-shadow;\n        text-align: center;\n\n        p {\n            font-size: 2rem;\n        }\n\n        .btn {\n            margin-top: 30px;\n            margin-right: 10px;\n        }\n    }\n}\n\n\n\n","@mixin xs {\n    @media (max-width: $screen-xs) {\n        @content;\n    }\n}\n\n@mixin sm {\n    @media (max-width: $screen-sm) {\n        @content;\n    }\n}\n\n@mixin md {\n    @media (min-width: $screen-sm) and (max-width: $screen-md) {\n        @content;\n    }\n}\n\n@mixin xl {\n    @media (min-width: $screen-xl) {\n        @content;\n    }\n}\n\n@mixin flex($direction: row, $justify: center, $align: center) {\n    display: flex;\n    flex-direction: $direction;\n    justify-content: $justify;\n    align-items: $align;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -208,29 +148,29 @@ module.exports = function (item) {
 
 /***/ }),
 
-/***/ "./src/form/form.scss":
-/*!****************************!*\
-  !*** ./src/form/form.scss ***!
-  \****************************/
+/***/ "./src/assets/styles/style.scss":
+/*!**************************************!*\
+  !*** ./src/assets/styles/style.scss ***!
+  \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_form_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./form.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/form/form.scss");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_style_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/styles/style.scss");
 
       
       
@@ -252,12 +192,12 @@ options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWi
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_form_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_style_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_form_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_form_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_form_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_style_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_style_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_style_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -644,120 +584,14 @@ module.exports = styleTagTransform;
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!**************************!*\
-  !*** ./src/form/form.js ***!
-  \**************************/
+/*!******************************************!*\
+  !*** ./src/assets/javascripts/topbar.js ***!
+  \******************************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _form_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./form.scss */ "./src/form/form.scss");
-/* harmony import */ var _assets_javascripts_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/javascripts/modal */ "./src/assets/javascripts/modal.js");
+/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/style.scss */ "./src/assets/styles/style.scss");
 
-
-const form = document.querySelector('form');
-const errorList = document.querySelector("#errors");
-const cancelBtn = document.querySelector(".btn-secondary");
-let articleId;
-const initForm = async () => {
-  const params = new URL(location.href); // une query String
-  articleId = params.searchParams.get("id"); //on recupere ID depuis la query String
-  const submitBtn = document.querySelector('.btn-primary');
-  if (articleId) {
-    const response = await fetch(`https://restapi.fr/api/dwwm_yuliia2/${articleId}`);
-    if (response.status < 299) {
-      const article = await response.json();
-      // on va remplir notre formulaire avec une fonction below:
-      submitBtn.innerText = "Sauvegarder";
-      fillForm(article);
-    }
-  }
-};
-const fillForm = article => {
-  const author = document.querySelector('input[name="author"]');
-  const image = document.querySelector('input[name="image"]');
-  const category = document.querySelector('select[name="category"]');
-  const title = document.querySelector('input[name="title"]');
-  const content = document.querySelector('textarea');
-  author.value = article.author;
-  image.value = article.image;
-  category.value = article.category;
-  title.value = article.title;
-  content.value = article.content;
-};
-initForm();
-cancelBtn.addEventListener('click', async () => {
-  const answer = await (0,_assets_javascripts_modal__WEBPACK_IMPORTED_MODULE_1__.openModal)("Attention, en annulant cou perdrez tout votre article, confirmez-vous l'annulation?");
-  if (answer) {
-    location.assign("./index.html");
-  }
-});
-const formIsValid = data => {
-  //catch of errors
-  let errors = [];
-  if (!data.author || !data.category || !data.content || !data.title) {
-    errors.push("Vous devez renseigner tous les champs");
-  }
-  if (errors.length) {
-    // si qq - renvoi TRUE
-    let errorHtml = '';
-    errors.forEach(error => {
-      errorHtml += `<li>${error}<li>`; // += pour rajouter des li, faire plusieur si plusieurs erreurs
-    });
-
-    errorList.innerHTML = errorHtml;
-    return false; // mon formulaire n'est pas valide, il y a des erreurs
-  } else {
-    errorList.innerHTML = '';
-    return true; // mon formulaire est vide, tout est ramplie
-  }
-};
-
-form.addEventListener('submit', async event => {
-  event.preventDefault();
-  const formData = new FormData(form);
-  const entries = formData.entries();
-  const data = Object.fromEntries(entries); // to get one object and not lists, we convert it using Object
-
-  if (formIsValid(data)) {
-    //on utilise async/await function to work with api
-    try {
-      const json = JSON.stringify(data); // get un JSON to send it to api to stock it
-      let response;
-      if (articleId) {
-        //j'enregistre la modification de mon article
-        response = await fetch(`https://restapi.fr/api/dwwm_yuliia2/${articleId}`, {
-          // i wait a return of my promise so i put await before fetch here
-          method: "PATCH",
-          // even when we post something we need to wairt a response that api got our information
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          // headers - each time you make a request you have a header, here we presise a content type that we gonna send - json)
-          body: json
-        });
-      } else {
-        //je creer un nouveau article
-        response = await fetch("https://restapi.fr/api/dwwm_yuliia2", {
-          // i wait a return of my promise so i put await before fetch here
-          method: "POST",
-          // even when we post something we need to wairt a response that api got our information
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          // headers - each time you make a request you have a header, here we presise a content type that we gonna send - json)
-          body: json
-        });
-      }
-      if (response.status < 299) {
-        //less than 300 means that everything is good, no error (we want here to redirect here to the index html page after posting an article)
-        location.assign('./index.html');
-      }
-      ;
-    } catch (error) {
-      console.log(error);
-    }
-  }
-});
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=form.bundle.js.map
+//# sourceMappingURL=topbar.bundle.js.map

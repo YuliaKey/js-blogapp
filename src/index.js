@@ -1,4 +1,5 @@
 import './index.scss';
+import { openModal } from "./assets/javascripts/modal";
 
 const articlesContainer = document.querySelector('.articles-container');
 const categoriesContainer = document.querySelector(".categories");
@@ -50,17 +51,24 @@ const displayArticles = () => {
     deleteBtns.forEach(button => {
         button.addEventListener('click', async (event) => {
             event.preventDefault();
-            try {
-                const target = event.target;
-                const articleId = target.dataset.id;
+            window.scrollTo(0,0);
 
-                const response = await fetch(`https://restapi.fr/api/dwwm_yuliia2/${articleId}`, {method: 'DELETE'}) //im sending request to api to delete an article which was targeted to be deleted (when you click on button delete on the website)
-                const body = await response.json();
-                fetchArticles();
-                console.log(body);
-            } catch (error) {
-                console.log(error)
-            }
+            const answer = await openModal("Etes Vous sur de vouloir supprimer cet article?"); //true /false
+
+            if (answer) {
+                try {
+                    const target = event.target;
+                    const articleId = target.dataset.id;
+    
+                    const response = await fetch(`https://restapi.fr/api/dwwm_yuliia2/${articleId}`, {method: 'DELETE'}) //im sending request to api to delete an article which was targeted to be deleted (when you click on button delete on the website)
+                    const body = await response.json();
+                    fetchArticles();
+                    console.log(body);
+                } catch (error) {
+                    console.log(error);
+                }
+            } 
+            
         } )
     });
 

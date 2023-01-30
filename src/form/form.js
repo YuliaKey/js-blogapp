@@ -1,4 +1,5 @@
 import "./form.scss";
+import { openModal } from "../assets/javascripts/modal";
 
 const form = document.querySelector('form');
 const errorList = document.querySelector("#errors");
@@ -38,8 +39,11 @@ const fillForm = (article) => {
 
 initForm();
 
-cancelBtn.addEventListener('click', () => {
-    location.assign("./index.html")
+cancelBtn.addEventListener('click', async () => {
+    const answer = await openModal("Attention, en annulant cou perdrez tout votre article, confirmez-vous l'annulation?");
+    if(answer) {
+        location.assign("./index.html");
+    }
 })
 
 const formIsValid = (data) => { //catch of errors
@@ -95,7 +99,7 @@ form.addEventListener('submit', async event => {
             if (response.status < 299){ //less than 300 means that everything is good, no error (we want here to redirect here to the index html page after posting an article)
                 location.assign('./index.html')
             };
-            
+
         } catch (error) {
             console.log(error);
         }

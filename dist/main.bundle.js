@@ -62,19 +62,19 @@ function openModal(question) {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/form/form.scss":
-/*!*********************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/form/form.scss ***!
-  \*********************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/index.scss":
+/*!*****************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
+  \*****************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
 
@@ -82,7 +82,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".content {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n}\n.content form {\n  background-color: white;\n  width: 700px;\n  padding: 4rem;\n  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);\n  border-radius: 5px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: flex-start;\n}\n@media (max-width: 480px) {\n  .content form {\n    width: 100%;\n  }\n}\n@media (max-width: 768px) {\n  .content form {\n    width: 100%;\n  }\n}\n.content form h2 {\n  width: 100%;\n}\n.content form .form-group {\n  width: 100%;\n  margin-bottom: 2rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: flex-start;\n}\n.content form .form-group label {\n  font-size: 1.8rem;\n  color: #2c3e50;\n  font-weight: 700;\n  margin-bottom: 1rem;\n}\n.content form .form-group input,\n.content form .form-group textarea,\n.content form .form-group select {\n  width: 100%;\n  border: 1px solid #ecf0f1;\n  outline: none;\n  font-size: 1.8rem;\n  border-radius: 3px;\n}\n.content form .form-group input:focus,\n.content form .form-group textarea:focus,\n.content form .form-group select:focus {\n  border-color: #2ecc71;\n}\n.content form .form-group input,\n.content form .form-group select {\n  padding: 5px 10px;\n}\n.content form .form-group textarea {\n  min-height: 20rem;\n  padding: 10px;\n}\n.content form .form-btn-container {\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  align-items: center;\n}\n.content form .form-btn-container .btn {\n  margin-left: 1rem;\n}", "",{"version":3,"sources":["webpack://./src/form/form.scss","webpack://./src/assets/styles/_mixins.scss","webpack://./src/assets/styles/_variables.scss"],"names":[],"mappings":"AAIA;ECqBI,aAAA;EACA,mBAFoB;EAGpB,uBAHmC;EAInC,mBAJmD;ADlBvD;AACI;EACI,uBAAA;EACA,YAAA;EACA,aAAA;EACA,mFEFK;EFGL,kBAAA;ECaJ,aAAA;EACA,sBDJkB;ECKlB,uBAHmC;EAInC,uBDNkC;AALtC;AChBI;EDMA;IAQQ,WAAA;EAMV;AACF;ACfI;EDAA;IAYQ,WAAA;EAOV;AACF;AAHQ;EACI,WAAA;AAKZ;AAFQ;EACI,WAAA;EACA,mBAAA;ECLR,aAAA;EACA,sBDMsB;ECLtB,uBAHmC;EAInC,uBDIsC;AAM1C;AAJY;EACI,iBAAA;EACA,cEhCD;EFiCC,gBAAA;EACA,mBAAA;AAMhB;AAHY;;;EAGI,WAAA;EACA,yBAAA;EACA,aAAA;EACA,iBAAA;EACA,kBAAA;AAKhB;AAHgB;;;EACI,qBEjDJ;AFwDhB;AAHY;;EAEI,iBAAA;AAKhB;AAFY;EACI,iBAAA;EACA,aAAA;AAIhB;AAAQ;EACI,WAAA;EC1CR,aAAA;EACA,mBAFoB;EAGpB,yBD0CgC;ECzChC,mBAJmD;ADiDvD;AAFY;EACI,iBAAA;AAIhB","sourcesContent":["@import '../assets/styles/variables';\n@import '../assets/styles/mixins';\n\n\n.content {\n    @include flex;\n\n    form {\n        background-color: white;\n        width: 700px;\n        padding: 4rem;\n        box-shadow: $box-shadow;\n        border-radius: 5px;\n\n        @include xs {\n            width: 100%;\n        }\n\n        @include sm {\n            width: 100%;\n        }\n\n        @include flex(column, $align: flex-start);\n\n        h2 {\n            width: 100%;\n        }\n\n        .form-group {\n            width: 100%;\n            margin-bottom: 2rem;\n\n            @include flex(column, $align: flex-start);\n\n            label {\n                font-size: 1.8rem;\n                color: $accent-color;\n                font-weight: 700;\n                margin-bottom: 1rem;\n            }\n\n            input, \n            textarea, \n            select {\n                width: 100%;\n                border: 1px solid $divider-color;\n                outline: none;\n                font-size: 1.8rem;\n                border-radius: 3px;\n\n                &:focus {\n                    border-color: $primary-color;\n                }\n            }\n\n            input,\n            select { \n                padding: 5px 10px;\n            }\n\n            textarea {\n                min-height: 20rem;\n                padding: 10px;\n            }\n        }\n\n        .form-btn-container {\n            width: 100%;\n\n            @include flex($justify: flex-end);\n\n            .btn {\n                margin-left: 1rem;\n            }\n        }\n    }\n}","@mixin xs {\n    @media (max-width: $screen-xs) {\n        @content;\n    }\n}\n\n@mixin sm {\n    @media (max-width: $screen-sm) {\n        @content;\n    }\n}\n\n@mixin md {\n    @media (min-width: $screen-sm) and (max-width: $screen-md) {\n        @content;\n    }\n}\n\n@mixin xl {\n    @media (min-width: $screen-xl) {\n        @content;\n    }\n}\n\n@mixin flex($direction: row, $justify: center, $align: center) {\n    display: flex;\n    flex-direction: $direction;\n    justify-content: $justify;\n    align-items: $align;\n}","@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap');\n\n$primary-color: #2ecc71;\n$primary-color-dark: #27ae60;\n$accent-color: #2c3e50;\n$text-color: #333;\n$text-error: #e74c3c;\n$divider-color: #ecf0f1;\n$font-family: 'Mulish', sans-serif;\n$box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);\n\n$screen-xs: 480px;\n$screen-sm: 768px;\n$screen-md: 979px;\n$screen-xl: 1200px;"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".content {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: flex-start;\n}\n.content .sidebar {\n  flex: 0 0 250px;\n  margin: 100px 30px;\n  border: 1px solid #333;\n  border-radius: 5px;\n  padding: 30px;\n  background: white;\n}\n.content .sidebar select {\n  width: 100%;\n  margin-bottom: 2rem;\n  border-radius: 0.3rem;\n  border: none;\n  outline: none;\n  background-color: white;\n  padding: 1rem;\n  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}\n.content .sidebar .categories li {\n  margin-bottom: 15px;\n}\n.content .sidebar .categories li:hover {\n  color: #2ecc71;\n  transition: color 0.2s;\n  cursor: pointer;\n}\n.content .sidebar .categories li:hover strong {\n  color: #2ecc71;\n}\n.content .sidebar .categories .active {\n  color: #2ecc71;\n  font-weight: bold;\n}\n.content .articles-container {\n  max-width: 800px;\n  width: 100%;\n  margin: 5rem 0 10rem;\n  flex: 1;\n}\n.content .articles-container .article {\n  background: white;\n  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);\n  border-radius: 1rem;\n  padding: 0 5rem;\n  margin-top: 8rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n.content .articles-container .article img {\n  height: 9rem;\n  width: 9rem;\n  border-radius: 50%;\n  margin-top: -4rem;\n  border: 4px solid #2ecc71;\n}\n.content .articles-container .article h2 {\n  margin-top: 2rem;\n  margin-bottom: 0;\n}\n.content .articles-container .article-author {\n  color: #2ecc71;\n  font-weight: 700;\n  margin-bottom: 3rem;\n}\n.content .articles-container .article-content {\n  max-width: 550px;\n  white-space: pre-line;\n}\n.content .articles-container .article-actions {\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  align-items: center;\n  margin: 3rem 0;\n  padding-top: 3rem;\n  border-top: 1px solid #ecf0f1;\n}\n.content .articles-container .article-actions .btn {\n  margin-left: 1rem;\n}", "",{"version":3,"sources":["webpack://./src/index.scss","webpack://./src/assets/styles/_mixins.scss","webpack://./src/assets/styles/_variables.scss"],"names":[],"mappings":"AAGA;ECsBI,aAAA;EACA,mBAFoB;EAGpB,uBAHmC;EAInC,uBDvBsB;AAC1B;AACI;EACI,eAAA;EACA,kBAAA;EACA,sBAAA;EACA,kBAAA;EACA,aAAA;EACA,iBAAA;AACR;AACQ;EACI,WAAA;EACA,mBAAA;EACA,qBAAA;EACA,YAAA;EACA,aAAA;EACA,uBAAA;EACA,aAAA;EACA,mFEdC;AFeb;AAGY;EACI,mBAAA;AADhB;AAEgB;EACI,cE5BJ;EF6BI,sBAAA;EACA,eAAA;AAApB;AAEoB;EACI,cEjCR;AFiChB;AAKY;EACI,cEvCA;EFwCA,iBAAA;AAHhB;AAUI;EACI,gBAAA;EACA,WAAA;EACA,oBAAA;EACA,OAAA;AARR;AAUQ;EACI,iBAAA;EACA,mFEhDC;EFiDD,mBAAA;EACA,eAAA;EACA,gBAAA;ECnCR,aAAA;EACA,sBDoCsB;ECnCtB,uBAHmC;EAInC,mBAJmD;ADgCvD;AAQY;EACI,YAAA;EACA,WAAA;EACA,kBAAA;EACA,iBAAA;EACA,yBAAA;AANhB;AASY;EACI,gBAAA;EACA,gBAAA;AAPhB;AAUY;EACI,cE5EA;EF6EA,gBAAA;EACA,mBAAA;AARhB;AAWY;EACI,gBAAA;EACA,qBAAA;AAThB;AAYY;EACI,WAAA;EChEZ,aAAA;EACA,mBAFoB;EAGpB,yBDgEoC;EC/DpC,mBAJmD;EDoEvC,cAAA;EACA,iBAAA;EACA,6BAAA;AARhB;AAUgB;EACI,iBAAA;AARpB","sourcesContent":["@import './assets/styles/variables';\n@import './assets/styles/mixins';\n\n.content {\n\n    @include flex($align: flex-start);\n\n    .sidebar {\n        flex: 0 0 250px;\n        margin: 100px 30px;\n        border: 1px solid $text-color;\n        border-radius: 5px;\n        padding: 30px;\n        background: white;\n\n        select {\n            width: 100%;\n            margin-bottom: 2rem;\n            border-radius: 0.3rem;\n            border: none;\n            outline: none;\n            background-color: white;\n            padding: 1rem;\n            box-shadow: $box-shadow;\n        }\n\n        .categories {\n            li {\n                margin-bottom: 15px;\n                &:hover {\n                    color: $primary-color;\n                    transition: color .2s;\n                    cursor: pointer;\n\n                    strong {\n                        color: $primary-color;\n                    }\n                }\n            }\n\n            .active {\n                color: $primary-color;\n                font-weight: bold;\n            }\n        }\n\n    }\n\n\n    .articles-container {\n        max-width: 800px;\n        width: 100%;\n        margin: 5rem 0 10rem;\n        flex: 1;\n\n        .article {\n            background: white;\n            box-shadow: $box-shadow;\n            border-radius: 1rem;\n            padding: 0 5rem;\n            margin-top: 8rem;\n\n            @include flex(column);\n\n            img {\n                height: 9rem;\n                width: 9rem;\n                border-radius: 50%;\n                margin-top: -4rem;\n                border: 4px solid $primary-color;\n            }\n\n            h2 {\n                margin-top: 2rem;\n                margin-bottom: 0;\n            }\n\n            &-author {\n                color: $primary-color;\n                font-weight: 700;\n                margin-bottom: 3rem;\n            }\n\n            &-content {\n                max-width: 550px;\n                white-space: pre-line;\n            }\n\n            &-actions {\n                width: 100%;\n                \n                @include flex($justify: flex-end);\n                margin: 3rem 0;\n                padding-top: 3rem;\n                border-top: 1px solid $divider-color;\n\n                .btn {\n                    margin-left: 1rem;\n                }\n            }\n        }\n    }\n}","@mixin xs {\n    @media (max-width: $screen-xs) {\n        @content;\n    }\n}\n\n@mixin sm {\n    @media (max-width: $screen-sm) {\n        @content;\n    }\n}\n\n@mixin md {\n    @media (min-width: $screen-sm) and (max-width: $screen-md) {\n        @content;\n    }\n}\n\n@mixin xl {\n    @media (min-width: $screen-xl) {\n        @content;\n    }\n}\n\n@mixin flex($direction: row, $justify: center, $align: center) {\n    display: flex;\n    flex-direction: $direction;\n    justify-content: $justify;\n    align-items: $align;\n}","@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap');\n\n$primary-color: #2ecc71;\n$primary-color-dark: #27ae60;\n$accent-color: #2c3e50;\n$text-color: #333;\n$text-error: #e74c3c;\n$divider-color: #ecf0f1;\n$font-family: 'Mulish', sans-serif;\n$box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);\n\n$screen-xs: 480px;\n$screen-sm: 768px;\n$screen-md: 979px;\n$screen-xl: 1200px;"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -208,29 +208,29 @@ module.exports = function (item) {
 
 /***/ }),
 
-/***/ "./src/form/form.scss":
-/*!****************************!*\
-  !*** ./src/form/form.scss ***!
-  \****************************/
+/***/ "./src/index.scss":
+/*!************************!*\
+  !*** ./src/index.scss ***!
+  \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_form_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./form.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/form/form.scss");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./index.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/index.scss");
 
       
       
@@ -252,12 +252,12 @@ options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWi
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_form_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_form_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_form_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_form_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -644,120 +644,150 @@ module.exports = styleTagTransform;
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!**************************!*\
-  !*** ./src/form/form.js ***!
-  \**************************/
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _form_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./form.scss */ "./src/form/form.scss");
-/* harmony import */ var _assets_javascripts_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/javascripts/modal */ "./src/assets/javascripts/modal.js");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.scss */ "./src/index.scss");
+/* harmony import */ var _assets_javascripts_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/javascripts/modal */ "./src/assets/javascripts/modal.js");
 
 
-const form = document.querySelector('form');
-const errorList = document.querySelector("#errors");
-const cancelBtn = document.querySelector(".btn-secondary");
-let articleId;
-const initForm = async () => {
-  const params = new URL(location.href); // une query String
-  articleId = params.searchParams.get("id"); //on recupere ID depuis la query String
-  const submitBtn = document.querySelector('.btn-primary');
-  if (articleId) {
-    const response = await fetch(`https://restapi.fr/api/dwwm_yuliia2/${articleId}`);
-    if (response.status < 299) {
-      const article = await response.json();
-      // on va remplir notre formulaire avec une fonction below:
-      submitBtn.innerText = "Sauvegarder";
-      fillForm(article);
-    }
-  }
-};
-const fillForm = article => {
-  const author = document.querySelector('input[name="author"]');
-  const image = document.querySelector('input[name="image"]');
-  const category = document.querySelector('select[name="category"]');
-  const title = document.querySelector('input[name="title"]');
-  const content = document.querySelector('textarea');
-  author.value = article.author;
-  image.value = article.image;
-  category.value = article.category;
-  title.value = article.title;
-  content.value = article.content;
-};
-initForm();
-cancelBtn.addEventListener('click', async () => {
-  const answer = await (0,_assets_javascripts_modal__WEBPACK_IMPORTED_MODULE_1__.openModal)("Attention, en annulant cou perdrez tout votre article, confirmez-vous l'annulation?");
-  if (answer) {
-    location.assign("./index.html");
-  }
+const articlesContainer = document.querySelector('.articles-container');
+const categoriesContainer = document.querySelector(".categories");
+const selectElement = document.getElementById("sort");
+let filter;
+let articles;
+let sortedBy = "desc"; // descendents
+
+selectElement.addEventListener('change', event => {
+  sortedBy = selectElement.value;
+  fetchArticles();
 });
-const formIsValid = data => {
-  //catch of errors
-  let errors = [];
-  if (!data.author || !data.category || !data.content || !data.title) {
-    errors.push("Vous devez renseigner tous les champs");
-  }
-  if (errors.length) {
-    // si qq - renvoi TRUE
-    let errorHtml = '';
-    errors.forEach(error => {
-      errorHtml += `<li>${error}<li>`; // += pour rajouter des li, faire plusieur si plusieurs erreurs
+const displayArticles = () => {
+  const articlesDOM = articles.filter(article => {
+    if (filter) {
+      return article.category === filter;
+    } else {
+      return true;
+    }
+  }).map(article => {
+    const articleNode = document.createElement('div');
+    articleNode.classList.add("article");
+    articleNode.innerHTML = `<img src=${article.image ? article.image : "assets/images/default_profile.png"} alt="">
+        <h2>${article.title}</h2>
+        <p class="article-author">${article.author} - <span>
+            ${new Date(article.createdAt).toLocaleDateString('fr-FR', {
+      weekday: "long",
+      day: "2-digit",
+      month: "long",
+      year: "numeric"
+    })}        
+        </span></p>
+        <p class="article-content">${article.content}</p>
+        <div class="article-actions">
+            <button class="btn btn-primary" data-id=${article._id}>Modifier</button>
+            <button class="btn btn-danger" data-id=${article._id}>Supprimer</button>
+        </div>`;
+    return articleNode;
+  });
+  articlesContainer.innerHTML = '';
+  articlesContainer.append(...articlesDOM);
+  const deleteBtns = articlesContainer.querySelectorAll(".btn-danger"); //recupere tous les boutons
+  const editBtns = articlesContainer.querySelectorAll(".btn-primary");
+  deleteBtns.forEach(button => {
+    button.addEventListener('click', async event => {
+      event.preventDefault();
+      window.scrollTo(0, 0);
+      const answer = await (0,_assets_javascripts_modal__WEBPACK_IMPORTED_MODULE_1__.openModal)("Etes Vous sur de vouloir supprimer cet article?"); //true /false
+
+      if (answer) {
+        try {
+          const target = event.target;
+          const articleId = target.dataset.id;
+          const response = await fetch(`https://restapi.fr/api/dwwm_yuliia2/${articleId}`, {
+            method: 'DELETE'
+          }); //im sending request to api to delete an article which was targeted to be deleted (when you click on button delete on the website)
+          const body = await response.json();
+          fetchArticles();
+          console.log(body);
+        } catch (error) {
+          console.log(error);
+        }
+      }
     });
+  });
+  editBtns.forEach(button => {
+    button.addEventListener('click', async event => {
+      event.preventDefault();
+      const target = event.target;
+      const articleId = target.dataset.id;
+      location.assign(`./form.html?id=${articleId}`);
+    });
+  });
+};
+const displayMenuCategories = categoriesArray => {
+  const liElements = categoriesArray.map(categoryElement => {
+    const li = document.createElement("li");
+    li.innerHTML = `${categoryElement[0]} ( <strong>${categoryElement[1]}</strong> )`;
+    if (categoryElement[0] === filter) {
+      li.classList.add('active');
+    }
+    li.addEventListener('click', event => {
+      if (filter === categoryElement[0]) {
+        // la category est deja selectionne, je deselectionne et je reviens sur la liste de touts les articles
+        liElements.forEach(li => li.classList.remove('active'));
+        filter = null;
+      } else {
+        // j'ai la liste de tous les articles, je selectionne une category
+        liElements.forEach(li => li.classList.remove('active'));
+        li.classList.add('active');
+        filter = categoryElement[0];
+      }
+      displayArticles();
+    });
+    return li;
+  });
+  categoriesContainer.innerHTML = "";
+  categoriesContainer.append(...liElements);
+};
+const createMenuCategories = () => {
+  const categories = articles.reduce((acc, article) => {
+    if (acc[article.category]) {
+      acc[article.category]++;
+    } else {
+      acc[article.category] = 1;
+    }
+    return acc;
+  }, {});
+  const categoriesArray = Object.keys(categories) // arrays dans array
+  .map(category => [category, categories[category]]) //[[science, 1], [histoire, 1], ...]
+  .sort((a, b) => a[0].localeCompare(b[0]));
+  displayMenuCategories(categoriesArray);
+};
+const fetchArticles = async () => {
+  // fonction asynchrone qui recupere les donnees depuis l'API
+  try {
+    const response = await fetch(`https://restapi.fr/api/dwwm_yuliia2?sort=createdAt:${sortedBy}`);
+    articles = await response.json(); // <=== on change 'const' en 'let'
 
-    errorList.innerHTML = errorHtml;
-    return false; // mon formulaire n'est pas valide, il y a des erreurs
-  } else {
-    errorList.innerHTML = '';
-    return true; // mon formulaire est vide, tout est ramplie
+    if (!(articles instanceof Array)) {
+      // si 'articles' n'est pas un tableau
+      articles = [articles]; // on le transforme en tableau
+    }
+
+    if (articles.length) {
+      displayArticles();
+      createMenuCategories();
+    } else {
+      articlesContainer.innerHTML = "<p>Pas d'articles pour le moment</p>";
+    }
+  } catch (error) {
+    console.log(error);
   }
 };
-
-form.addEventListener('submit', async event => {
-  event.preventDefault();
-  const formData = new FormData(form);
-  const entries = formData.entries();
-  const data = Object.fromEntries(entries); // to get one object and not lists, we convert it using Object
-
-  if (formIsValid(data)) {
-    //on utilise async/await function to work with api
-    try {
-      const json = JSON.stringify(data); // get un JSON to send it to api to stock it
-      let response;
-      if (articleId) {
-        //j'enregistre la modification de mon article
-        response = await fetch(`https://restapi.fr/api/dwwm_yuliia2/${articleId}`, {
-          // i wait a return of my promise so i put await before fetch here
-          method: "PATCH",
-          // even when we post something we need to wairt a response that api got our information
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          // headers - each time you make a request you have a header, here we presise a content type that we gonna send - json)
-          body: json
-        });
-      } else {
-        //je creer un nouveau article
-        response = await fetch("https://restapi.fr/api/dwwm_yuliia2", {
-          // i wait a return of my promise so i put await before fetch here
-          method: "POST",
-          // even when we post something we need to wairt a response that api got our information
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          // headers - each time you make a request you have a header, here we presise a content type that we gonna send - json)
-          body: json
-        });
-      }
-      if (response.status < 299) {
-        //less than 300 means that everything is good, no error (we want here to redirect here to the index html page after posting an article)
-        location.assign('./index.html');
-      }
-      ;
-    } catch (error) {
-      console.log(error);
-    }
-  }
-});
+fetchArticles();
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=form.bundle.js.map
+//# sourceMappingURL=main.bundle.js.map
